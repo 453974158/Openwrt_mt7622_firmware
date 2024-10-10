@@ -28,7 +28,6 @@ sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 #git clone https://github.com/zzsj0928/luci-app-pushbot
 
 #下载闭源驱动并覆盖
-
 git clone https://github.com/bricco1981/MT7622-mtkwifi
 cp -r MT7622-mtkwifi/package/* package/
 cp -rf MT7622-mtkwifi/target/* target/
