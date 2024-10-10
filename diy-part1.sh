@@ -31,3 +31,4 @@ sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
 git clone https://github.com/bricco1981/MT7622-mtkwifi
 cp -r MT7622-mtkwifi/package/* package/
 cp -rf MT7622-mtkwifi/target/* target/
+rm -rf package/mtk/mt7915
