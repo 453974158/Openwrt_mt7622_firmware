@@ -15,6 +15,7 @@
 sed -i '1i src-git liuran001 https://github.com/liuran001/openwrt-packages' feeds.conf.default
 sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
 sed -i '2i src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '2i src-git imp https://github.com/immortalwrt/packages.git;openwrt-18.06' feeds.conf.default
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
