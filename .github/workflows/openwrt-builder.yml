@@ -143,15 +143,13 @@ jobs:
         tag_name: ${{ steps.tag.outputs.release_tag }}
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
-        token: ${{ secrets.ACTIONS_TRIGGER_PAT }}
 
     - name: Delete workflow runs
       uses: Mattraks/delete-workflow-runs@main
       with:
         retain_days: 0
         keep_minimum_runs: 2
-        token: ${{ secrets.ACTIONS_TRIGGER_PAT }}
-
+        
     - name: Remove old Releases
       uses: dev-drprasad/delete-older-releases@master
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
@@ -159,4 +157,4 @@ jobs:
         keep_latest: 3
         delete_tags: true
       env:
-        GITHUB_TOKEN: ${{ secrets.ACTIONS_TRIGGER_PAT }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
