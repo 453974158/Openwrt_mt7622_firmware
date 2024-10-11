@@ -28,7 +28,7 @@
 #git clone https://github.com/zzsj0928/luci-app-pushbot
 
 #下载闭源驱动并覆盖
-git clone https://github.com/bricco1981/MT7622-mtkwifi
-cp -r MT7622-mtkwifi/package/mtk/luci-app-mtwifi/ package/lean/mt/
-cp -r MT7622-mtkwifi/package/mtk/mt7622/ package/lean/mt/drivers/
-cp -rf MT7622-mtkwifi/target/* target/
+#git clone https://github.com/bricco1981/MT7622-mtkwifi
+#cp -r MT7622-mtkwifi/package/mtk/luci-app-mtwifi/ package/lean/mt/
+#cp -r MT7622-mtkwifi/package/mtk/mt7622/ package/lean/mt/drivers/
+#cp -rf MT7622-mtkwifi/target/* target/
