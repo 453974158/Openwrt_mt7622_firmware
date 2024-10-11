@@ -19,7 +19,7 @@
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
-cd package
+#cd package
 
 #国内常用OpenWrt软件包源码合集
 #git clone https://github.com/kenzok8/openwrt-packages
