@@ -29,6 +29,7 @@
 
 #下载闭源驱动并覆盖
 git clone https://github.com/bricco1981/MT7622-mtkwifi
-cp -r MT7622-mtkwifi/package/* package/
+cp -r MT7622-mtkwifi/package/mtk/luci-app-mtwifi/ package/lean/
+cp -r MT7622-mtkwifi/package/mtk/mt7622/ package/lean/mt/drivers/
+cp -r MT7622-mtkwifi/package/mtk/mt7915/ package/lean/mt/drivers/
 cp -rf MT7622-mtkwifi/target/* target/
-rm -rf package/mtk/mt7915
